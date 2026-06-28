@@ -1,0 +1,647 @@
+/* style.css - Ifeanyi Williams Eze Portfolio */
+/* I used a dark blue theme because it looks professional */
+
+/* reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0d1b2a;
+  color: #e0e0e0;
+  line-height: 1.7;
+}
+
+a {
+  color: #4a9eff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* reusable container to center content */
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* sections have top and bottom padding */
+.section {
+  padding: 70px 0;
+}
+
+/* alternate background for some sections */
+.grey-bg {
+  background-color: #111f33;
+}
+
+/* small label that sits above section headings */
+.section-tag {
+  color: #4a9eff;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+}
+
+.section-title {
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 35px;
+}
+
+
+/* ---- NAVBAR ---- */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0d1b2a;
+  z-index: 999;
+  border-bottom: 1px solid #1e3a5f;
+  padding: 14px 0;
+}
+
+/* this class is added by JS when user scrolls down */
+#navbar.scrolled {
+  background-color: rgba(13, 27, 42, 0.97);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.nav-inner {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.logo span {
+  color: #4a9eff;
+}
+
+#nav-menu {
+  display: flex;
+  gap: 28px;
+}
+
+#nav-menu a {
+  color: #aaaaaa;
+  font-size: 15px;
+}
+
+#nav-menu a:hover {
+  color: #ffffff;
+}
+
+/* make hamburger button invisible on desktop */
+#menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+
+/* ---- HERO SECTION ---- */
+#home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 60px 60px;
+  gap: 40px;
+}
+
+.hello {
+  color: #4a9eff;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+#home h1 {
+  font-size: 46px;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.tagline {
+  font-size: 20px;
+  color: #aaaaaa;
+  margin-bottom: 16px;
+  min-height: 30px;
+}
+
+/* the typewriter text cursor blinks */
+#typewriter {
+  color: #4a9eff;
+  font-weight: bold;
+  border-right: 2px solid #4a9eff;
+  padding-right: 3px;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%   { border-color: #4a9eff; }
+  50%  { border-color: transparent; }
+  100% { border-color: #4a9eff; }
+}
+
+.hero-desc {
+  color: #aaaaaa;
+  max-width: 480px;
+  margin-bottom: 28px;
+  font-size: 15px;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 14px;
+}
+
+/* buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #4a9eff;
+  color: #0d1b2a;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 15px;
+  border: 2px solid #4a9eff;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  background-color: #2e7acc;
+  color: #ffffff;
+  border-color: #2e7acc;
+}
+
+/* outlined button style */
+.btn-border {
+  background-color: transparent;
+  color: #4a9eff;
+}
+
+.btn-border:hover {
+  background-color: #4a9eff;
+  color: #0d1b2a;
+}
+
+.hero-img img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #4a9eff;
+}
+
+
+/* ---- ABOUT SECTION ---- */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 40px;
+}
+
+.about-text p {
+  margin-bottom: 14px;
+  color: #bbbbbb;
+}
+
+.about-text h3 {
+  color: #ffffff;
+  margin: 20px 0 8px;
+  font-size: 17px;
+}
+
+.interest-list li {
+  color: #bbbbbb;
+  margin-bottom: 6px;
+}
+
+/* the info card on the right side of about */
+.info-card {
+  background-color: #1a2e45;
+  border: 1px solid #1e3a5f;
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.info-card h3 {
+  color: #4a9eff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+}
+
+.info-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #1e3a5f;
+  font-size: 14px;
+  color: #cccccc;
+}
+
+.info-list li:last-child {
+  border-bottom: none;
+}
+
+.info-list span {
+  color: #888888;
+  font-size: 12px;
+  display: block;
+  margin-bottom: 2px;
+}
+
+/* green color for available status */
+.green {
+  color: #34d399;
+}
+
+
+/* ---- EDUCATION & EXPERIENCE (TIMELINE) ---- */
+.timeline-box {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+/* the blue dot on the left */
+.dot {
+  width: 14px;
+  height: 14px;
+  min-width: 14px;
+  border-radius: 50%;
+  background-color: #4a9eff;
+  margin-top: 6px;
+}
+
+.timeline-card {
+  background-color: #1a2e45;
+  border: 1px solid #1e3a5f;
+  border-radius: 10px;
+  padding: 22px;
+  width: 100%;
+}
+
+.date {
+  color: #4a9eff;
+  font-size: 13px;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.timeline-card h3 {
+  color: #ffffff;
+  margin-bottom: 4px;
+  font-size: 19px;
+}
+
+.school {
+  color: #4a9eff;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.timeline-card p {
+  color: #bbbbbb;
+  font-size: 14px;
+}
+
+.exp-list {
+  list-style: disc;
+  padding-left: 18px;
+}
+
+.exp-list li {
+  color: #bbbbbb;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+
+/* ---- SKILLS SECTION ---- */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.skills-group {
+  color: #4a9eff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 22px;
+}
+
+.skill {
+  margin-bottom: 18px;
+}
+
+.skill-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #cccccc;
+  margin-bottom: 6px;
+}
+
+/* the grey background track for the skill bar */
+.bar-bg {
+  background-color: #1e3a5f;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* the blue fill - width is set by JavaScript */
+.bar-fill {
+  height: 100%;
+  width: 0;
+  background-color: #4a9eff;
+  border-radius: 4px;
+  transition: width 1s ease;
+}
+
+
+/* ---- PROJECTS SECTION ---- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.project-card {
+  background-color: #1a2e45;
+  border: 1px solid #1e3a5f;
+  border-radius: 10px;
+  padding: 22px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+}
+
+.project-card h3 {
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+.project-card p {
+  color: #bbbbbb;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+/* small coloured tags showing technologies used */
+.tech-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.tech-tags span {
+  background-color: rgba(74, 158, 255, 0.15);
+  color: #4a9eff;
+  border: 1px solid rgba(74, 158, 255, 0.3);
+  border-radius: 20px;
+  padding: 3px 12px;
+  font-size: 12px;
+}
+
+.project-links {
+  display: flex;
+  gap: 12px;
+}
+
+.project-links a {
+  font-size: 13px;
+  font-weight: bold;
+  border: 1px solid #1e3a5f;
+  padding: 5px 14px;
+  border-radius: 5px;
+  color: #aaaaaa;
+}
+
+.project-links a:hover {
+  border-color: #4a9eff;
+  color: #4a9eff;
+}
+
+
+/* ---- GALLERY SECTION ---- */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.gallery-img:hover {
+  opacity: 0.8;
+}
+
+
+/* ---- CONTACT SECTION ---- */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+}
+
+.contact-info p {
+  color: #bbbbbb;
+  margin-bottom: 20px;
+}
+
+.contact-list li {
+  margin-bottom: 14px;
+  color: #bbbbbb;
+  font-size: 15px;
+}
+
+/* the form on the right side */
+#contact-form {
+  background-color: #1a2e45;
+  border: 1px solid #1e3a5f;
+  border-radius: 10px;
+  padding: 28px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #cccccc;
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 14px;
+  background-color: #0d1b2a;
+  border: 1px solid #1e3a5f;
+  border-radius: 6px;
+  color: #e0e0e0;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #4a9eff;
+}
+
+/* shown when a field is empty on submit */
+.error-msg {
+  color: #f87171;
+  font-size: 12px;
+  margin-top: 4px;
+  min-height: 16px;
+}
+
+
+/* ---- FOOTER ---- */
+footer {
+  background-color: #111f33;
+  text-align: center;
+  padding: 30px 20px;
+  color: #888888;
+  font-size: 14px;
+  border-top: 1px solid #1e3a5f;
+}
+
+footer p {
+  margin-bottom: 4px;
+}
+
+
+/* ---- BACK TO TOP BUTTON ---- */
+/* hidden by default, shown by JS when user scrolls down */
+#back-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 44px;
+  height: 44px;
+  background-color: #4a9eff;
+  color: #0d1b2a;
+  border: none;
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+#back-top:hover {
+  background-color: #2e7acc;
+}
+
+
+/* ---- MOBILE RESPONSIVE ---- */
+@media (max-width: 768px) {
+  /* show the hamburger, hide the links */
+  #menu-btn {
+    display: block;
+  }
+
+  #nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 55px;
+    right: 0;
+    background-color: #111f33;
+    width: 220px;
+    padding: 20px;
+    gap: 16px;
+    border-left: 1px solid #1e3a5f;
+  }
+
+  /* JS adds this class to show the menu */
+  #nav-menu.open {
+    display: flex;
+  }
+
+  /* stack hero vertically on small screens */
+  #home {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 100px 20px 50px;
+  }
+
+  #home h1 {
+    font-size: 30px;
+  }
+
+  .hero-btns {
+    justify-content: center;
+  }
+
+  .hero-img img {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* stack about, skills, contact to single column */
+  .about-grid,
+  .skills-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* stack projects to 1 column */
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* gallery 2 columns on mobile */
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ifeanyi|Portfolio site</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- navigation bar -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo">Ifeanyi<span>.dev</span></a>
+
+    <!-- hamburger button for mobile -->
+    <button id="menu-btn" onclick="toggleMenu()">&#9776;</button>
+
+    <ul id="nav-menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<!-- hero / home section -->
+<section id="home">
+  <div class="hero-content">
+    <p class="hello">Hi, I'm</p>
+    <h1>Ifeanyi Alexander Williams Eze</h1>
+
+    <!-- the typewriter text is changed by script.js -->
+    <p class="tagline">I am a <span id="typewriter"></span></p>
+
+    <p class="hero-desc">
+      Aspiring Tech enthusiast from Lagos, Nigeria. I enjoy any aspect of tech and I'm currently looking for a trainee/internship role where I can
+      learn and grow.
+    </p>
+
+    <div class="hero-btns">
+      <a href="assets/Ifeanyi_Williams_Eze 2.pdf" target="_blank" class="btn">View Resume</a>
+      <a href="#contact" class="btn btn-border">Contact Me</a>
+    </div>
+  </div>
+
+  <!-- profile photo - replace src with your own photo -->
+  <div class="hero-img">
+    <img
+      src="images/profile.jpg.jpeg"
+      alt="Ifeanyi Williams Eze"
+      onerror="this.src='https://placehold.co/320x320/0d1b2a/4a9eff?text=IWE'"
+    />
+  </div>
+</section>
+
+
+<!-- about section -->
+<section id="about" class="section">
+  <div class="container">
+    <p class="section-tag">Who I am</p>
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          My name is Ifeanyi Alexander Williams Eze. I'm based in Lagos, Nigeria and I
+          have a background in tech, sales and computer hardware repair. I
+          recently started learning web development from an online course coupled with some basic knowledge i have rom school and from my own research and I am really enjoying it.
+        </p>
+        <p>
+          I am currently studying Computer Engineering at Enugu State University of
+          Science and Technology. I want to combine my engineering knowledge
+          with other aspects of tech to build useful things.
+        </p>
+
+        <h3>Career Goal</h3>
+        <p>
+          My goal is to become a full time tech enthusiast. I want to keep building
+          projects and improving every day until I can work on real products
+          that people use.
+        </p>
+
+        <h3>Interests</h3>
+        <ul class="interest-list">
+          <li>💻Tech</li>
+          <li>🔧 Computer Hardware &amp; Repairs</li>
+          <li>📦 E-Commerce</li>
+          <li>🌐 Networking</li>
+          <li>📚 Online Learning</li>
+          <li>🤖Artificial Intelligence</li>
+        </ul>
+      </div>
+
+      <!-- quick info card -->
+      <div class="info-card">
+        <h3>Quick Info</h3>
+        <ul class="info-list">
+          <li><span>Name:</span> Ifeanyi Alexander Williams Eze</li>
+          <li><span>Location:</span> Lagos, Nigeria</li>
+          <li><span>School:</span>Enugu State Univesity of Science and Technology (ESUT)</li>
+          <li><span>Phone:</span> <a href="tel:+2348127439913">+234 812 743 9913</a></li>
+          <li><span>Email 1</span> <a href="www.kingalex1@gmail.com">www.kingalex1@gmail.com</a></li>
+          <li><span>Email 2:</span> <a href="mailto:williamsezehgau7_csh@indeedemail.com">williamsezehgau7_csh@indeedemail.com</a></li>
+          <li><span>Status:</span> <strong class="green">Open and ready to work</strong></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- education section -->
+<section id="education" class="section grey-bg">
+  <div class="container">
+    <p class="section-tag">My background</p>
+    <h2 class="section-title">Education</h2>
+
+    <div class="timeline-box">
+      <div class="dot"></div>
+      <div class="timeline-card">
+        <p class="date">November 2022 – Present</p>
+        <h3>Computer Engineering (University)</h3>
+        <p class="school">Enugu State University of Science and Technology</p>
+        <p>
+          Studying engineering while also seeking internship opportunities in any tech related roles. The course has helped me think logically and approach problems
+          in a structured way.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- skills section -->
+<section id="skills" class="section">
+  <div class="container">
+    <p class="section-tag">What I know</p>
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-grid">
+
+      <div>
+        <h3 class="skills-group">Technical Skills</h3>
+
+        <div class="skill">
+          <div class="skill-top">
+            <span>HTML &amp; CSS</span>
+            <span>65%</span>
+          </div>
+          <!-- the bar width gets animated by script.js -->
+          <div class="bar-bg"><div class="bar-fill" data-width="75"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-top">
+            <span>JavaScript</span>
+            <span>40%</span>
+          </div>
+          <div class="bar-bg"><div class="bar-fill" data-width="50"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-top">
+            <span>C++</span>
+            <span>50%</span>
+          </div>
+          <div class="bar-bg"><div class="bar-fill" data-width="45"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-top">
+            <span>Computer Hardware &amp; Repairs</span>
+            <span>90%</span>
+          </div>
+          <div class="bar-bg"><div class="bar-fill" data-width="85"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-top">
+            <span>System Troubleshooting</span>
+            <span>80%</span>
+          </div>
+          <div class="bar-bg"><div class="bar-fill" data-width="80"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-top">
+            <span>Network Maintenance</span>
+            <span>50%</span>
+          </div>
+          <div class="bar-bg"><div class="bar-fill" data-width="65"></div></div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="skills-group">Other Skills</h3>
+
+        <div class="skill">
+          <div class="skill-top">
+            <span>Sales &amp;Representative</span>
+            <span>85%</span>
+          </div>
+          <div class="bar-bg"><div class="bar-fill" data-width="85"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-top">
+            <span>Customer Service</span>
+            <span>90%</span>
+          </div>
+          <div class="bar-bg"><div class="bar-fill" data-width="90"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-top">
+            <span>Data Entry &amp; Annotation</span>
+            <span>75%</span>
+          </div>
+          <div class="bar-bg"><div class="bar-fill" data-width="75"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-top">
+            <span>Building E-Commerce stores</span>
+            <span>80%</span>
+          </div>
+          <div class="bar-bg"><div class="bar-fill" data-width="70"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-top">
+            <span>Communication</span>
+            <span>88%</span>
+          </div>
+          <div class="bar-bg"><div class="bar-fill" data-width="88"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-top">
+            <span>Account Management</span>
+            <span>70%</span>
+          </div>
+          <div class="bar-bg"><div class="bar-fill" data-width="72"></div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- experience section -->
+<section id="experience" class="section grey-bg">
+  <div class="container">
+    <p class="section-tag">Work history</p>
+    <h2 class="section-title">Experience</h2>
+
+    <div class="timeline-box">
+      <div class="dot"></div>
+      <div class="timeline-card">
+        <p class="date">April 2022 – October 2022</p>
+        <h3>Sales Representative</h3>
+        <p class="school">Samfytech — Ojo Alaba, Lagos</p>
+        <ul class="exp-list">
+          <li>Repaired computers and laptops for customers</li>
+          <li>Diagnosed and fixed software and hardware problems</li>
+          <li>Helped maintain the office network(to an extent)</li>
+          <li>Sold new and used laptops to customers</li>
+          <li>Handled customer complaints and gave technical advice</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- projects section -->
+<section id="projects" class="section">
+  <div class="container">
+    <p class="section-tag">Things I built</p>
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <h3>Personal Portfolio Website</h3>
+        <p>
+          This website! I built it using only HTML, CSS and JavaScript with no
+          frameworks. It was my biggest project so far and I learned a lot from it.
+        </p>
+        <div class="tech-tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+        <div class="project-links">
+          <!-- replace # with your actual GitHub and live links -->
+          <a href="#" target="_blank">GitHub</a>
+          <a href="#" target="_blank">Live Demo</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>ESP8266 IOT school project</h3>
+        <p>
+        I assembled and coded a christmass lightshow board and a fire detector with buzzer as a project in my 3rd year
+        </p>
+        <div class="tech-tags">
+          <span>ESP8266</span><span>ARDUINO</span><span>C++</span>
+        </div>
+        
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- gallery section -->
+<section id="gallery" class="section grey-bg">
+  <div class="container">
+    <p class="section-tag">A bit about me</p>
+    <h2 class="section-title">Gallery</h2>
+
+    <div class="gallery-grid">
+      <!-- replace these images with your own photos in the images/ folder -->
+      <img src="images/photo1.jpg.jpeg" alt="Photo 1" class="gallery-img"
+           onerror="this.src='https://placehold.co/400x300/0d1b2a/4a9eff?text=Photo+1'" />
+      <img src="images/photo2.jpg.jpeg" alt="Photo 2" class="gallery-img"
+           onerror="this.src='https://placehold.co/400x300/0d1b2a/4a9eff?text=Photo+2'" />
+      <img src="images/photo3.jpg.jpeg" alt="Photo 3" class="gallery-img"
+           onerror="this.src='https://placehold.co/400x300/0d1b2a/4a9eff?text=Photo+3'" />
+      <img src="images/photo4.jpg.jpeg" alt="Photo 4" class="gallery-img"
+           onerror="this.src='https://placehold.co/400x300/0d1b2a/4a9eff?text=Photo+4'" />
+      <img src="images/photo5.jpg.jpeg" alt="Photo 5" class="gallery-img"
+           onerror="this.src='https://placehold.co/400x300/0d1b2a/4a9eff?text=Photo+5'" />
+    </div>
+  </div>
+</section>
+
+
+<!-- contact section -->
+<section id="contact" class="section">
+  <div class="container">
+    <p class="section-tag">Reach out</p>
+    <h2 class="section-title">Contact Me</h2>
+
+    <div class="contact-grid">
+
+      <div class="contact-info">
+        <p>I'm open to trainee / internship positionss in any tech role. Feel free to reach out!</p>
+        <ul class="contact-list">
+          <li>✉️ <a href="www.kingalex1@gmail.com">www.kingalex1@gmail.com</a></li>
+          <li>✉️ <a href="mailto:williamsezehgau7_csh@indeedemail.com">williamsezehgau7_csh@indeedemail.com</a></li>
+          <li>📞 <a href="tel:+2348127439913">+234 812 743 9913</a></li>
+          <li>🐙 <a href="https://github.com/" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
+
+      <!-- contact form - validation is handled in script.js -->
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your name" />
+          <p class="error-msg" id="name-error"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="your@email.com" />
+          <p class="error-msg" id="email-error"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="Subject" />
+          <p class="error-msg" id="subject-error"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Your message..."></textarea>
+          <p class="error-msg" id="message-error"></p>
+        </div>
+
+        <button type="submit" class="btn" onclick="validateForm(event)">Send Message</button>
+        <p id="success-msg" style="display:none; color:#34d399; margin-top:10px;">
+          Message sent! I will get back to you soon.
+        </p>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- footer -->
+<footer>
+  <p>Ifeanyi Alexander Williams Eze &copy; <span id="year"></span></p>
+  <p>Built with HTML, CSS, JavaScript and ❤️</p>
+</footer> 
+
+<!-- back to top button -->
+<button id="back-top" onclick="scrollToTop()">&#8679;</button>
+
+<script src="script.js"></script>
+</body>
+</html>
