@@ -588,7 +588,7 @@ footer p {
 @media (max-width: 768px) {
   .gallery-grid img:first-child {
   object-position: right center;
-}
+  grid-column:span 2;
 }
   /* show the hamburger, hide the links */
   #menu-btn {
