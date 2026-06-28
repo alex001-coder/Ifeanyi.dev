@@ -481,6 +481,7 @@ img {
 }
 
 
+
 /* ---- CONTACT SECTION ---- */
 .contact-grid {
   display: grid;
@@ -585,6 +586,10 @@ footer p {
 
 /* ---- MOBILE RESPONSIVE ---- */
 @media (max-width: 768px) {
+  .gallery-grid img:first-child {
+  object-position: right center;
+}
+}
   /* show the hamburger, hide the links */
   #menu-btn {
     display: block;
